@@ -19,7 +19,7 @@ myLocation();
 // Function to fetch weather data from WeatherAPI based on a location 
 async function getData(location) {
   var response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=be9428670011421993c155239240810&q=${location}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=be9428670011421993c155239240810&q=${location}&days=3`
   );
   var data = await response.json();
   console.log(data);
