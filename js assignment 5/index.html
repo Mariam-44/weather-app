@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- * bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- * fontawsome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <!-- * media -->
+    <link rel="stylesheet" href="./css/media.css" />
+    <!-- * style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- * navbar -->
+    <nav class="navbar navbar-expand-lg py-5">
+      <div class="container">
+        <div class="heading d-flex">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/logo.png"
+              alt=""
+              style="width: 64px; height: 40px"
+            />
+          </a>
+          <a href="" class="text-decoration-none"
+            ><h1 class="h5 m-0 text-white">Weather</h1>
+            <small class="text-white-50">tagline goes here</small></a
+          >
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars fs-6 px-1 py-3"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-1">
+              <a class="nav-link active px-4 py-1" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link px-4 py-1" href="#">News</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link px-4 py-1" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link px-4 py-1" href="#">Photos</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link px-4 py-1" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- * home section -->
+    <div class="home">
+      <div class="container">
+        <div class="mb-3 pt-5 position-relative">
+          <input
+            type="text"
+            class="form-control w-100 input"
+            placeholder="Find your location..."
+            aria-label="Recipient's username"
+            name="location"
+            id="location"
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            class="btn btn-primary position-absolute rounded-5 me-1"
+          >
+            Find
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- * weather cards -->
+    <div class="weather-cards">
+      <div class="container">
+        <div class="row row-cols-lg-3 px-3">
+          <div class="card current p-0" style="background: #323544"></div>
+          <div class="card NextDay p-0" style="background-color: #262936"></div>
+          <div class="card NextDay p-0" style="background-color: #323544"></div>
+        </div>
+      </div>
+    </div>
+    <!-- * Footer -->
+    <div class="footer py-5" style="background: #262936">
+      <div class="container">
+        <div class="row">
+          <div class="mb-3 position-relative col-lg-8">
+            <input
+              type="text"
+              class="form-control w-100"
+              placeholder="Enter your email to subscribe..."
+              aria-label="Recipient's username"
+            />
+            <button
+              type="button"
+              class="btn btn-primary position-absolute rounded-5 px-4 me-3"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="icons d-flex offset-lg-1 col-lg-3">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i>
+            </a>
+            <a href="https://pinterest.com" target="_blank">
+              <i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <p class="text-white-50 fs-6">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

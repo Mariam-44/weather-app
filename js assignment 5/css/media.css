@@ -1,0 +1,23 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-nav{
+        margin-top: 0 !important;
+        background-color: #1e202b !important; 
+        border-color: #009ad8 !important;
+    }
+
+    .nav-item {
+        padding: 0 !important ;
+        border-bottom: 0px !important;
+        
+    }
+    .nav-link:hover ,.nav-link.active{
+        border-color: #009ad8 !important;
+    }
+
+    
+}
